@@ -78,9 +78,9 @@ namespace Warships
 
                 if (matrix[row, col] == '#')
                 {
-                    for (int iRow = row - 1; iRow < 3; iRow++)
+                    for (int iRow = row - 1; iRow < row+2; iRow++)
                     {
-                        for (int iCol = col - 1; iCol < 3; iCol++)
+                        for (int iCol = col - 1; iCol < col+2; iCol++)
                         {
                             if (iRow >= 0 && iCol >= 0 && iRow < matrix.GetLength(0) && iCol < matrix.GetLength(1))
                             {
